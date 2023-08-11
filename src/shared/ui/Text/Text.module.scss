@@ -1,0 +1,11 @@
+.default {
+  color: var(--color-grey-dark);
+}
+
+.translucent {
+  color: rgba(var(--color-white-rgb) / 50%);
+}
+
+.orange {
+  color: var(--color-orange-main);
+}

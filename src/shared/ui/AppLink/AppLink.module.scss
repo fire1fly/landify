@@ -1,0 +1,12 @@
+.default {
+  text-decoration: none;
+  color: rgba(var(--color-white-rgb) / 40%);
+
+  &:hover {
+    color: rgba(var(--color-white-rgb) / 69%);
+  }
+
+  &:active {
+    color: rgba(var(--color-white-rgb) / 40%);
+  }
+}
