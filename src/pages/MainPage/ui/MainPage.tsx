@@ -1,7 +1,6 @@
 import { Header } from 'widgets/Header';
 import { MainScreen } from 'widgets/MainScreen';
 import { Steps } from 'widgets/Steps';
-import { Footer } from 'widgets/Footer';
 import { useRef } from 'react';
 import cls from './MainPage.module.scss';
 
@@ -25,7 +24,6 @@ const MainPage = () => {
         <Header onClickScroll={handleScrollToSteps} />
         <MainScreen onClickScroll={handleScrollToSteps} />
         <Steps ref={stepsEl} />
-        {/* <Footer /> */}
       </div>
     </div>
   );
