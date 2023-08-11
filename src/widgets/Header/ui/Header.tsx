@@ -26,7 +26,7 @@ export const Header: FC<HeaderProps> = ({ className, onClickScroll }) => {
 
         {
           lg && (
-            <div className={cls.Header_plate}>
+            <div className={cls.Header_plate} onClick={onClickScroll}>
               <div className={cls.Header_plate_inner}>
                 <IconInfo className={cls.Header_plate_icon} />
                 <div className={classNames(cls.Header_plate_text, '_text-upper')}>{t('howItWork')}</div>
