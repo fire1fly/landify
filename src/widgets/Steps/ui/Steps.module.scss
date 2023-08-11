@@ -1,0 +1,190 @@
+.Steps {
+  padding: 80px 0;
+  background: var(--color-green-main);
+
+  &_plate {
+    padding: 12px 14px;
+    font-family: var(--font-stolzl-regular);
+    font-size: 15px;
+  }
+
+  &_title {
+    margin: 0;
+    font-family: var(--font-stolzl-bold);
+    font-weight: normal;
+    font-size: 44px;
+  }
+
+  &_subtitle {
+    margin: 0;
+    margin-top: 12px;
+    font-family: var(--font-stolzl-regular);
+    font-size: 16px;
+    color: var(--color-grey-main);
+  }
+
+  &_grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  &_card {
+    border-radius: 50px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-green-light);
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background: var(--color-grey-dark);
+
+      .Steps_card {
+        &_title {
+          color: var(--color-white);
+        }
+
+        &_desc {
+          color: #817e8d;
+        }
+      }
+    }
+
+    &_number {
+      border-radius: 50%;
+      width: 84px;
+      height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-green-main);
+      font-family: var(--font-stolzl-regular);
+      font-size: 41px;
+      color: var(--color-black);
+    }
+
+    &_icon {
+      align-self: center;
+      max-width: 220px;
+      width: 100%;
+    }
+
+    &_title {
+      margin: 0;
+      margin-top: 40px;
+      font-family: var(--font-stolzl-bold);
+      font-weight: normal;
+      font-size: 24px;
+      color: var(--color-grey-dark);
+      transition: 0.2s;
+    }
+
+    &_desc {
+      margin: 12px 0 0;
+      font-family: var(--font-stolzl-regular);
+      font-size: 16px;
+      color: var(--color-black);
+      transition: 0.2s;
+    }
+
+    &_btn {
+      min-width: 160px;
+      padding: 16px 0;
+      font-size: 16px;
+
+      &_wrapper {
+        margin-top: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .Steps {
+    &_title {
+      font-size: 34px;
+    }
+
+    &_card {
+      padding: 25px;
+
+      &_icon {
+        max-width: 180px;
+      }
+
+      &_title {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .Steps {
+    &_grid {
+      margin-top: 25px;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    &_card {
+      border-radius: 32px;
+
+      &_number {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+      }
+
+      &_title {
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .Steps {
+    padding: 30px 0;
+
+    &_plate {
+      padding: 10px 11px;
+      font-size: 12px;
+    }
+
+    &_title {
+      font-size: 24px;
+    }
+
+    &_subtitle {
+      font-size: 14px;
+    }
+
+    &_card {
+      position: relative;
+
+      &_number {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        z-index: 2;
+      }
+
+      &_icon {
+        max-width: 100px;
+      }
+
+      &_title {
+        font-size: 16px;
+      }
+
+      &_desc {
+        margin-top: 8px;
+        font-size: 12px;
+      }
+    }
+  }
+}
