@@ -1,0 +1,9 @@
+.Page {
+  position: relative;
+  display: block;
+
+  &_inner {
+    position: relative;
+    z-index: 2;
+  }
+}
