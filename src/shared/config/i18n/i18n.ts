@@ -23,4 +23,11 @@ i18n
     },
   });
 
+const detectedLanguage = i18n.language;
+if (detectedLanguage.startsWith('en')) {
+  i18n.changeLanguage('en-US');
+} else if (detectedLanguage.startsWith('ru')) {
+  i18n.changeLanguage('ru-RU');
+}
+
 export default i18n;
