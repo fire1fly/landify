@@ -1,10 +1,10 @@
-import decentraland from 'shared/assets/images/decentraland.svg';
-import sandbox from 'shared/assets/images/sandbox.svg';
-import roblox from 'shared/assets/images/roblox.svg';
+import decentraland from 'shared/assets/images/decentraland.png';
+import sandbox from 'shared/assets/images/sandbox.png';
+import roblox from 'shared/assets/images/roblox.png';
 
 interface ITag {
   key: string;
-  image: React.VFC<React.SVGProps<SVGSVGElement>>;
+  image: string;
 }
 
 export const tags: ITag[] = [

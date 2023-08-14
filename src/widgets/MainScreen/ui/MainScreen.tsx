@@ -49,11 +49,14 @@ export const MainScreen: FC<MainScreenProps> = ({ className, onClickScroll }) =>
                 <div className={classNames(cls.MainScreen_tags_label, '_text-upper')}>{t('poweredBy')}</div>
                 <div className={cls.MainScreen_tags_row}>
                   {
-                    tags.map(({ key, image: Image }) => (
-                      <Image
-                        key={key}
-                        className={cls.MainScreen_tags_item}
-                      />
+                    tags.map(({ key, image }) => (
+                      <div className={cls.MainScreen_tags_item}>
+                        <img
+                          key={key}
+                          src={image}
+                          alt={key}
+                        />
+                      </div>
                     ))
                   }
                 </div>
